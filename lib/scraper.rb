@@ -4,7 +4,7 @@ require 'pry'
 
 class Scraper
 
-  def self.scrape_in_ear
+  def scrape_in_ear
         doc = Nokogiri::HTML(open("https://www.cnet.com/topics/headphones/best-headphones/earbuds/")).css("#rbContent div.bestListing ul li div.itemWrap")
 
         in_ear_array =[]
