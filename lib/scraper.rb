@@ -16,10 +16,10 @@ class Scraper
           h_rating = headphone[1].css(".subrating").attribute("aria-lable").value
 
           in_ear_array << {name: h_name, price: h_price, url: h_url, rating: h_rating}
-          in_ear_array
+
           binding.pry
         end
-
+        in_ear_array
       end
   # def self.scrape_index_page(index_url)
   #
