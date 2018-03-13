@@ -7,7 +7,7 @@ class Scraper
   def self.scrape_index_page(index_url)
 
     doc = Nokogiri::HTML(open(index_url)).css("#rbContent div.bestListing ul li")
-
+binding.pry
     students = doc.collect do |s|
       s.css(".student-card").collect do |s|
         {:name => s.css("h4").text,
