@@ -7,7 +7,7 @@ class Scraper
   def self.scrape_index_page(index_url)
 
     doc = Nokogiri::HTML(open("https://www.cnet.com/topics/headphones/best-headphones/earbuds/"))
-    array = doc.css(".bestListings")
+    array = doc.css(".rbContent")
 
 binding.pry
     students = doc.collect do |s|
