@@ -18,6 +18,7 @@ class Scraper
           in_ear_array << {name: h_name, price: h_price, url: h_url, rating: h_rating}
         end
         in_ear_array
+        binding.pry
       end
   # def self.scrape_index_page(index_url)
   #
